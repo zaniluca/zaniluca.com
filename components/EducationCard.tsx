@@ -55,19 +55,19 @@ const EducationCard: React.FC<EducationCardProps> = ({
     >
       <motion.span
         variants={text}
-        className="text-sm font-normal leading-5 text-neutral-500"
+        className="text-sm font-normal leading-5 text-gray-500"
       >
         {datespan}
       </motion.span>
       <motion.h4
         variants={text}
-        className="text-base font-medium leading-6 text-neutral-900"
+        className="text-base font-medium leading-6 text-gray-900"
       >
         {name}
       </motion.h4>
       <motion.p
         variants={text}
-        className="max-w-lg text-base font-normal leading-6 text-neutral-500 sm:text-sm sm:leading-5"
+        className="max-w-lg text-base font-normal leading-6 text-gray-500 sm:text-sm sm:leading-5"
       >
         {description}
       </motion.p>

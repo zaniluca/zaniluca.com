@@ -4,7 +4,7 @@ type SectionHeadingProps = {
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ name }) => {
   return (
-    <h2 className="text-base font-medium uppercase tracking-widest text-neutral-400">
+    <h2 className="text-base font-medium uppercase tracking-widest text-gray-400">
       {name}
     </h2>
   );

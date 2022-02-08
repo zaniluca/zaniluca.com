@@ -32,7 +32,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
 
   return (
     <motion.div variants={wrapper} className="grid grid-rows-3 gap-2">
-      <h4 className="text-base font-medium leading-6 text-neutral-900 sm:text-sm sm:leading-5">
+      <h4 className="text-base font-medium leading-6 text-gray-900 sm:text-sm sm:leading-5">
         {name}
       </h4>
       <div>
@@ -49,7 +49,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
             return (
               <StarIcon
                 key={index}
-                className="h-6 w-6 text-neutral-300 sm:h-4 sm:w-4"
+                className="h-6 w-6 text-gray-300 sm:h-4 sm:w-4"
               />
             );
           })}

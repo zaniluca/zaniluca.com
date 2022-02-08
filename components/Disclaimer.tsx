@@ -12,7 +12,7 @@ const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
     <p
       className={classNames(
         className,
-        "max-w-screen-sm text-center text-xs font-normal text-neutral-400"
+        "max-w-screen-sm text-center text-xs font-normal text-gray-400"
       )}
     >
       {t("disclaimer")}

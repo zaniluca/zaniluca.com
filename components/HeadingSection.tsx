@@ -12,7 +12,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
         {/* Avatar */}
         <span className="relative inline-block">
           <img
-            className="h-44 w-44 rounded-full bg-neutral-300"
+            className="h-44 w-44 rounded-full bg-gray-300"
             src="/images/profile.jpg"
             alt="Picture"
           />
@@ -21,10 +21,10 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
       </div>
 
       <div className="mt-8">
-        <h1 className="text-3xl font-medium leading-7 text-neutral-900">
+        <h1 className="text-3xl font-medium leading-7 text-gray-900">
           Luca Zani
         </h1>
-        <p className="mt-4 max-w-screen-md text-lg font-normal leading-6 text-neutral-500">
+        <p className="mt-4 max-w-screen-lg text-lg font-normal leading-7 text-gray-500">
           {t("heading.bio")}
         </p>
         <div className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-3">
@@ -41,33 +41,44 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
             value={t("heading.info.nationality.value")}
           />
           <div>
-            <p className="text-base font-medium uppercase text-neutral-500 sm:text-sm">
+            <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
               {t("heading.info.phone.name")}
             </p>
             <a
               href="tel:+393383106419"
-              className="text-base font-normal text-neutral-900 underline decoration-neutral-200 decoration-2 hover:text-neutral-700 sm:text-sm sm:leading-5"
+              className="text-base font-normal text-gray-900 underline decoration-gray-200 decoration-2 hover:text-gray-700 sm:text-sm sm:leading-5"
             >
               +39 3383106419
             </a>
           </div>
           <div>
-            <p className="text-base font-medium uppercase text-neutral-500 sm:text-sm">
+            <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
               {t("heading.info.email.name")}
             </p>
             <a
               href="mailto:contact-me@zaniluca.com"
-              className="text-base font-normal text-neutral-900 underline decoration-neutral-200 decoration-2 hover:text-neutral-700 sm:text-sm sm:leading-5"
+              className="text-base font-normal text-gray-900 underline decoration-gray-200 decoration-2 hover:text-gray-700 sm:text-sm sm:leading-5"
             >
-              contact-me@zaniluca.com
+              contact@zaniluca.com
             </a>
           </div>
         </div>
-        <LinkButton
-          className="mt-5 text-base"
-          text={t("heading.download_button")}
-          href="#"
-        />
+        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div>
+            <LinkButton
+              className="text-base"
+              text={t("heading.download_button")}
+              href="#"
+            />
+          </div>
+          <div>
+            <LinkButton
+              className="text-base"
+              text="LinkedIn"
+              href="https://linkedin.com/in/zaniluca"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -82,10 +93,10 @@ type InfoCellProps = {
 const InfoCell: React.FC<InfoCellProps> = ({ className, name, value }) => {
   return (
     <div className={className}>
-      <p className="text-base font-medium uppercase text-neutral-500 sm:text-sm">
+      <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
         {name}
       </p>
-      <p className="text-base font-normal text-neutral-900 sm:text-sm sm:leading-5">
+      <p className="text-base font-normal text-gray-900 sm:text-sm sm:leading-5">
         {value}
       </p>
     </div>

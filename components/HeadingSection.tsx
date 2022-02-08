@@ -40,14 +40,28 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
             name={t("heading.info.nationality.name")}
             value={t("heading.info.nationality.value")}
           />
-          <InfoCell
-            name={t("heading.info.phone.name")}
-            value="+39 3383106419"
-          />
-          <InfoCell
-            name={t("heading.info.email.name")}
-            value="contact-me@zaniluca.com"
-          />
+          <div>
+            <p className="text-base font-medium uppercase text-neutral-500 sm:text-sm">
+              {t("heading.info.phone.name")}
+            </p>
+            <a
+              href="tel:+393383106419"
+              className="text-base font-normal text-neutral-900 underline decoration-neutral-200 decoration-2 hover:text-neutral-700 sm:text-sm sm:leading-5"
+            >
+              +39 3383106419
+            </a>
+          </div>
+          <div>
+            <p className="text-base font-medium uppercase text-neutral-500 sm:text-sm">
+              {t("heading.info.email.name")}
+            </p>
+            <a
+              href="mailto:contact-me@zaniluca.com"
+              className="text-base font-normal text-neutral-900 underline decoration-neutral-200 decoration-2 hover:text-neutral-700 sm:text-sm sm:leading-5"
+            >
+              contact-me@zaniluca.com
+            </a>
+          </div>
         </div>
         <LinkButton
           className="mt-5 text-base"

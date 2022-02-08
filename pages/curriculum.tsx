@@ -88,13 +88,12 @@ const CurriculumPage: NextPage = () => {
                 datespan={t("education.itis.datespan")}
                 name={t("education.itis.name")}
                 description={t("education.itis.description")}
-                certificationHref="#"
               />
               <EducationCard
                 datespan={t("education.cisco.datespan")}
                 name={t("education.cisco.name")}
                 description={t("education.cisco.description")}
-                certificationHref="#"
+                certificationHref="/certificates/CCNA1.pdf"
               />
             </div>
           </div>

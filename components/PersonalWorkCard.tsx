@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Badge from "./Badge";
 import LinkButton from "./LinkButton";
 
@@ -62,6 +63,8 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
   href,
   tags,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       variants={wrapper}
@@ -91,7 +94,11 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
         </motion.p>
         {href && (
           <motion.div variants={text}>
-            <LinkButton className="mt-2" text="Check it out" href={href} />
+            <LinkButton
+              className="mt-2"
+              text={t("personal_work.button_text")}
+              href={href}
+            />
           </motion.div>
         )}
         <div className="mt-6">

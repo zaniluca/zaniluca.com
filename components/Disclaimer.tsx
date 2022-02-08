@@ -1,10 +1,13 @@
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
 type DisclaimerProps = {
   className?: string;
 };
 
 const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
+  const { t } = useTranslation();
+
   return (
     <p
       className={classNames(
@@ -12,10 +15,7 @@ const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
         "max-w-screen-sm text-center text-xs font-normal text-neutral-400"
       )}
     >
-      Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi
-      dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di
-      protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento
-      europeo sulla protezione dei dati personali”
+      {t("disclaimer")}
     </p>
   );
 };

@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import LinkButton from "./LinkButton";
 
 type HeadingSectionProps = {};
 
 const HeadingSection: React.FC<HeadingSectionProps> = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div>
@@ -22,21 +25,33 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
           Luca Zani
         </h1>
         <p className="mt-4 max-w-screen-md text-lg font-normal leading-6 text-neutral-500">
-          Hi I’m Luca, an Italian Fullstack Developer specialized in React,
-          Typescript, Swift and Python. I enjoy writing clean and maintainable
-          code and staying up to date with the latest technology standards and
-          best practices.
+          {t("heading.bio")}
         </p>
         <div className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-3">
-          <InfoCell name="Gender" value="Male" />
-          <InfoCell name="Birthday" value="31 January 2002" />
-          <InfoCell name="Nationality" value="Italian" />
-          <InfoCell name="Phone" value="+39 3383106419" />
-          <InfoCell name="Email" value="contact@zaniluca.it" />
+          <InfoCell
+            name={t("heading.info.gender.name")}
+            value={t("heading.info.gender.value")}
+          />
+          <InfoCell
+            name={t("heading.info.birthday.name")}
+            value={t("heading.info.birthday.value")}
+          />
+          <InfoCell
+            name={t("heading.info.nationality.name")}
+            value={t("heading.info.nationality.value")}
+          />
+          <InfoCell
+            name={t("heading.info.phone.name")}
+            value="+39 3383106419"
+          />
+          <InfoCell
+            name={t("heading.info.email.name")}
+            value="contact-me@zaniluca.com"
+          />
         </div>
         <LinkButton
           className="mt-5 text-base"
-          text="Download Curriculum as PDF"
+          text={t("heading.download_button")}
           href="#"
         />
       </div>

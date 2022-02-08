@@ -1,6 +1,7 @@
 import LinkButton from "./LinkButton";
 import { SVGProps } from "react";
 import { motion, Variants } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const wrapper: Variants = {
   offscreen: {
@@ -27,6 +28,8 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
   rating,
   certificationHref,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div variants={wrapper} className="grid grid-rows-3 gap-2">
       <h4 className="text-base font-medium leading-6 text-neutral-900 sm:text-sm sm:leading-5">
@@ -34,7 +37,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
       </h4>
       <div>
         <div className="grid grid-flow-col justify-start">
-          {[...Array(rating)].map((value: undefined, index: number) => {
+          {[...Array(rating)].map((_, index: number) => {
             return (
               <StarIcon
                 key={index}
@@ -42,7 +45,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
               />
             );
           })}
-          {[...Array(5 - rating)].map((value: undefined, index: number) => {
+          {[...Array(5 - rating)].map((_, index: number) => {
             return (
               <StarIcon
                 key={index}
@@ -55,7 +58,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
       {certificationHref && (
         <LinkButton
           className="mt-2"
-          text="Certification"
+          text={t("language.button_text")}
           href={certificationHref}
         />
       )}

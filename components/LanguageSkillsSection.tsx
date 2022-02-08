@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import LanguageScore from "./LanguageScore";
 
 const wrapper: Variants = {
@@ -17,6 +18,8 @@ const wrapper: Variants = {
 type LanguageSkillsSectionProps = {};
 
 const LanguageSkillsSection: React.FC<LanguageSkillsSectionProps> = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       variants={wrapper}
@@ -26,16 +29,16 @@ const LanguageSkillsSection: React.FC<LanguageSkillsSectionProps> = () => {
       className="mt-8 grid gap-8 sm:mt-4 sm:grid-flow-col"
     >
       <LanguageScore
-        name="English Written (B2)"
+        name={t("language.english_written")}
         rating={4}
         certificationHref="#"
       />
       <LanguageScore
-        name="English Spoken (B1)"
+        name={t("language.english_spoken")}
         rating={4}
         certificationHref="#"
       />
-      <LanguageScore name="Italian (native)" rating={5} />
+      <LanguageScore name={t("language.italian")} rating={5} />
     </motion.div>
   );
 };

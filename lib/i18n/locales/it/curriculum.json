@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "bio": "Hi I’m Luca, an Italian Fullstack Developer specialized in React, Typescript, Swift and Python. I enjoy writing clean and maintainable code and staying up to date with the latest technology standards and best practices.",
+    "info": {
+      "gender": {
+        "name": "Sesso",
+        "value": "Maschio"
+      },
+      "birthday": {
+        "name": "Data di nascita",
+        "value": "31 Gennaio 2002"
+      },
+      "nationality": {
+        "name": "Nazionalità",
+        "value": "Italiana"
+      },
+      "phone": {
+        "name": "Telefono",
+        "value": "+39 3383106419"
+      },
+      "email": {
+        "name": "Email",
+        "value": "contact-me@zaniluca.com"
+      }
+    },
+    "download_button": "Scarica curriculum PDF"
+  },
+  "personal_work": {
+    "headline": "personal work",
+    "cloudmover": {
+      "datespan": "Dic 2021 - Presente",
+      "name": "Cloud migrations Web App",
+      "description": "Fast and Easy to Use cloud migration service with NodeJS apollo-express backend and stripe payment services"
+    },
+    "iregistro_website": {
+      "datespan": "Mar 2021 - Apr 2021",
+      "name": "React App Showcase Website",
+      "description": "React Website to showcase my app made in React with the NextJs Framework and Tailwind CSS"
+    },
+    "iregistro": {
+      "datespan": "Giu 2020 - Feb 2021",
+      "name": "Fullstack iOS App",
+      "description": "Swift native iOS app with custom Python Flask API that scrapes data from schools websites and helps students staying up to date"
+    },
+    "button_text": "Check it out"
+  },
+  "education": {
+    "headline": "education",
+    "polimi": {
+      "datespan": "2021 - Presente",
+      "name": "Ingegneria informatica",
+      "description": "Al momento sto proseguendo gli studi in “Ingegneria informatica” presso il Politecnico di Milano"
+    },
+    "itis": {
+      "datespan": "2016 - 2019",
+      "name": "Perito Informatico",
+      "description": "Ottenuto con valutazione 100 e lode la qualifica di “Perito Informatico” presso l’IIS Janello Torriani di Cremona"
+    },
+    "cisco": {
+      "datespan": "2019 - 2020",
+      "name": "CCNA Routing and Switching",
+      "description": "Ottenuto con valutazione 100 e lode la qualifica di “Perito Informatico” presso l’IIS Janello Torriani di Cremona"
+    },
+    "button_text": "Certificazione"
+  },
+  "language": {
+    "headline": "language skills",
+    "english_written": "Inglese scritto (B2)",
+    "english_spoken": "Inglese parlato (B1)",
+    "italian": "Italiano (lingua madre)",
+    "button_text": "Certificazione"
+  },
+  "disclaimer": "Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”"
+}

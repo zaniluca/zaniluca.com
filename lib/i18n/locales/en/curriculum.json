@@ -58,7 +58,7 @@
     },
     "cisco": {
       "datespan": "2019 ― 2020",
-      "name": "CCNA Routing and Switching",
+      "name": "Cisco CCNA1 Routing and Switching",
       "description": "Ottenuto con valutazione 100 e lode la qualifica di “Perito Informatico” presso l’IIS Janello Torriani di Cremona"
     },
     "button_text": "Certification"
@@ -66,7 +66,7 @@
   "language": {
     "headline": "language skills",
     "english_written": "English Written (B2)",
-    "english_spoken": "English Spoken (B1)",
+    "english_spoken": "English Spoken (B2)",
     "italian": "Italian (native)",
     "button_text": "Certification"
   },

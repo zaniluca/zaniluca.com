@@ -12,7 +12,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
         {/* Avatar */}
         <span className="relative inline-block">
           <img
-            className="h-44 w-44 rounded-full bg-gray-300"
+            className="h-44 w-44 rounded-full ring-2 ring-gray-300"
             src="/images/profile.jpg"
             alt="Picture"
           />

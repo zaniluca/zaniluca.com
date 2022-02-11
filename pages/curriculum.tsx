@@ -7,17 +7,10 @@ import LanguageSkillsSection from "../components/LanguageSkillsSection";
 import PersonalWorkCard from "../components/PersonalWorkCard";
 import SectionHeading from "../components/SectionHeading";
 import { useTranslation } from "react-i18next";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 import Head from "next/head";
 
 const CurriculumPage: NextPage = () => {
-  const { t, i18n } = useTranslation();
-  const router = useRouter();
-
-  useEffect(() => {
-    i18n.changeLanguage(router.locale);
-  }, [router.locale]);
+  const { t } = useTranslation();
 
   return (
     <>

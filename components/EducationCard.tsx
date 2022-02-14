@@ -43,7 +43,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
   description,
   datespan,
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum", { keyPrefix: "education" });
 
   return (
     <motion.div
@@ -75,7 +75,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
         <motion.div variants={text}>
           <LinkButton
             className="mt-2"
-            text={t("education.button_text")}
+            text={t("button_text")}
             href={certificationHref}
           />
         </motion.div>

@@ -28,7 +28,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
   rating,
   certificationHref,
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum", { keyPrefix: "language" });
 
   return (
     <motion.div variants={wrapper} className="grid grid-rows-3 gap-2">
@@ -58,7 +58,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
       {certificationHref && (
         <LinkButton
           className="mt-2"
-          text={t("language.button_text")}
+          text={t("button_text")}
           href={certificationHref}
         />
       )}

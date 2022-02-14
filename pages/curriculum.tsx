@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import Head from "next/head";
 
 const CurriculumPage: NextPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum");
 
   return (
     <>

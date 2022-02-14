@@ -1,21 +1,29 @@
+import Image from "next/image";
+import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import LinkButton from "./LinkButton";
 
 type HeadingSectionProps = {};
 
 const HeadingSection: React.FC<HeadingSectionProps> = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum", { keyPrefix: "heading" });
+  const router = useRouter();
 
   return (
     <div>
       <div>
         {/* Avatar */}
         <span className="relative inline-block">
-          <img
-            className="h-44 w-44 rounded-full ring-2 ring-gray-300"
-            src="/images/profile.jpg"
-            alt="Picture"
-          />
+          <div className="relative h-44 w-44 rounded-full ring-2 ring-gray-300">
+            <Image
+              priority
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+              src="/images/profile.jpg"
+              alt="Picture"
+            />
+          </div>
           {/* <span className="absolute bottom-0 right-0 block h-10 w-10 rounded-full bg-green-400 ring-4 ring-white" /> */}
         </span>
       </div>
@@ -25,24 +33,24 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
           Luca Zani
         </h1>
         <p className="mt-4 max-w-screen-lg text-lg font-normal leading-7 text-gray-500">
-          {t("heading.bio")}
+          {t("bio")}
         </p>
         <div className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-3">
           <InfoCell
-            name={t("heading.info.gender.name")}
-            value={t("heading.info.gender.value")}
+            name={t("info.birthday.name")}
+            value={t("info.birthday.value")}
           />
           <InfoCell
-            name={t("heading.info.birthday.name")}
-            value={t("heading.info.birthday.value")}
+            name={t("info.gender.name")}
+            value={t("info.gender.value")}
           />
           <InfoCell
-            name={t("heading.info.nationality.name")}
-            value={t("heading.info.nationality.value")}
+            name={t("info.nationality.name")}
+            value={t("info.nationality.value")}
           />
           <div>
             <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
-              {t("heading.info.phone.name")}
+              {t("info.phone.name")}
             </p>
             <a
               href="tel:+393383106419"
@@ -53,7 +61,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
           </div>
           <div>
             <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
-              {t("heading.info.email.name")}
+              {t("info.email.name")}
             </p>
             <a
               href="mailto:contact-me@zaniluca.com"
@@ -67,8 +75,8 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
           <div>
             <LinkButton
               className="text-base"
-              text={t("heading.download_button")}
-              href="#"
+              text={t("download_button")}
+              href={`/curriculums/${router.locale}_zani_luca.pdf`}
             />
           </div>
           <div>

@@ -49,17 +49,17 @@
     "polimi": {
       "datespan": "2021 ― Present",
       "name": "Computer Engineering",
-      "description": "Currently studying “Computer Engineering” at Politecnico di Milano"
+      "description": "Currently studying “Computer Engineering” at the Politecnico di Milano"
     },
     "itis": {
       "datespan": "2016 ― 2019",
-      "name": "Perito Informatico",
-      "description": "Ottenuto con valutazione 100 e lode la qualifica di “Perito Informatico” presso l’IIS Janello Torriani di Cremona"
+      "name": "Computer Expert",
+      "description": "Obtained the qualification of “Computer Expert” at the IIS Janello Torriani in Cremona with a grade of 100 and honors"
     },
     "cisco": {
       "datespan": "2019 ― 2020",
       "name": "Cisco CCNA1 Routing and Switching",
-      "description": "Ottenuto con valutazione 100 e lode la qualifica di “Perito Informatico” presso l’IIS Janello Torriani di Cremona"
+      "description": ""
     },
     "button_text": "Certification"
   },
@@ -70,5 +70,5 @@
     "italian": "Italian (native)",
     "button_text": "Certification"
   },
-  "disclaimer": "Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”"
+  "disclaimer": "I authorize the processing of my personal data in the CV pursuant to art. 13 d. lgs. June 30, 2003 n. 196 - \"Code regarding the protection of personal data\" and art. 13 GDPR 679/16 - \"European regulation on the protection of personal data\""
 }

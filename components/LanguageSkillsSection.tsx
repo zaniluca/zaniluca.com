@@ -18,7 +18,7 @@ const wrapper: Variants = {
 type LanguageSkillsSectionProps = {};
 
 const LanguageSkillsSection: React.FC<LanguageSkillsSectionProps> = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum", { keyPrefix: "language" });
 
   return (
     <motion.div
@@ -28,9 +28,9 @@ const LanguageSkillsSection: React.FC<LanguageSkillsSectionProps> = () => {
       viewport={{ once: true, amount: 0.2 }}
       className="mt-8 grid gap-8 sm:mt-4 sm:grid-flow-col"
     >
-      <LanguageScore name={t("language.english_written")} rating={4} />
-      <LanguageScore name={t("language.english_spoken")} rating={4} />
-      <LanguageScore name={t("language.italian")} rating={5} />
+      <LanguageScore name={t("english_written")} rating={4} />
+      <LanguageScore name={t("english_spoken")} rating={4} />
+      <LanguageScore name={t("italian")} rating={5} />
     </motion.div>
   );
 };

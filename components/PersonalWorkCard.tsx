@@ -63,7 +63,7 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
   href,
   tags,
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum", { keyPrefix: "personal_work" });
 
   return (
     <motion.div
@@ -94,11 +94,7 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
         </motion.p>
         {href && (
           <motion.div variants={text}>
-            <LinkButton
-              className="mt-2"
-              text={t("personal_work.button_text")}
-              href={href}
-            />
+            <LinkButton className="mt-2" text={t("button_text")} href={href} />
           </motion.div>
         )}
         <div className="mt-6">

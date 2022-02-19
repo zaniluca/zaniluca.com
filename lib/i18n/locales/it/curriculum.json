@@ -23,7 +23,8 @@
         "value": "contact-me@zaniluca.com"
       }
     },
-    "download_button": "Scarica curriculum PDF"
+    "download_button": "Scarica curriculum PDF",
+    "download_link": "https://s3.eu-west-2.amazonaws.com/zaniluca.com-curriculums-prod-s3/it_zani_luca.pdf"
   },
   "personal_work": {
     "headline": "personal work",

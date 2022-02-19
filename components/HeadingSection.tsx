@@ -76,7 +76,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
             <LinkButton
               className="text-base"
               text={t("download_button")}
-              href={`/curriculums/${router.locale}_zani_luca.pdf`}
+              href={t("download_link")}
             />
           </div>
           <div>

@@ -1,4 +1,7 @@
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
+import Head from "next/head";
+import { loadTranslations } from "ni18n";
+import { useTranslation } from "react-i18next";
 import Disclaimer from "../components/Disclaimer";
 import Divider from "../components/Divider";
 import EducationCard from "../components/EducationCard";
@@ -6,8 +9,7 @@ import HeadingSection from "../components/HeadingSection";
 import LanguageSkillsSection from "../components/LanguageSkillsSection";
 import PersonalWorkCard from "../components/PersonalWorkCard";
 import SectionHeading from "../components/SectionHeading";
-import { useTranslation } from "react-i18next";
-import Head from "next/head";
+import { ni18nConfig } from "../ni18n.config";
 
 const CurriculumPage: NextPage = () => {
   const { t } = useTranslation("curriculum");
@@ -106,6 +108,14 @@ const CurriculumPage: NextPage = () => {
       </div>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await loadTranslations(ni18nConfig, locale, ["curriculum"])),
+    },
+  };
 };
 
 export default CurriculumPage;

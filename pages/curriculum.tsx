@@ -1,6 +1,7 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import { loadTranslations } from "ni18n";
+import path from "path";
 import { useTranslation } from "react-i18next";
 import Disclaimer from "../components/Disclaimer";
 import Divider from "../components/Divider";
@@ -110,7 +111,11 @@ const CurriculumPage: NextPage = () => {
   );
 };
 
+export const forceLocalesPacking = () => path.join("./public/locales");
+
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  // Fix for vercel not loading locales: https://github.com/JCQuintas/ni18n/issues/49#issuecomment-1011137220
+  forceLocalesPacking();
   return {
     props: {
       ...(await loadTranslations(ni18nConfig, locale, ["curriculum"])),

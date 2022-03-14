@@ -6,7 +6,7 @@ type DisclaimerProps = {
 };
 
 const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("curriculum");
 
   return (
     <p

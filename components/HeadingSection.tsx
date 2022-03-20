@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import LinkButton from "./LinkButton";
 
@@ -7,12 +6,10 @@ type HeadingSectionProps = {};
 
 const HeadingSection: React.FC<HeadingSectionProps> = () => {
   const { t } = useTranslation("curriculum", { keyPrefix: "heading" });
-  const router = useRouter();
 
   return (
     <div>
       <div>
-        {/* Avatar */}
         <span className="relative inline-block">
           <div className="relative h-44 w-44 rounded-full ring-2 ring-gray-300">
             <Image
@@ -67,7 +64,8 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
               href="mailto:contact-me@zaniluca.com"
               className="text-base font-normal text-gray-900 underline decoration-gray-200 decoration-2 hover:text-gray-700 sm:text-sm sm:leading-5"
             >
-              contact-me@zaniluca.com
+              {/* TODO: Change it back to contact-me@zaniluca.com */}
+              zani.luca@icloud.com
             </a>
           </div>
         </div>
@@ -84,6 +82,11 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
               className="text-base"
               text="LinkedIn"
               href="https://linkedin.com/in/zaniluca"
+            />
+            <LinkButton
+              className="ml-3 text-base"
+              text="GitHub"
+              href="https://github.com/ZaniLuca"
             />
           </div>
         </div>

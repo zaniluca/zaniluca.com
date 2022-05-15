@@ -43,7 +43,7 @@
       "name": "Gitlab Mobile App for Notifications",
       "description": "App multiplatform che utilizza le email di gitlab per inviare notifiche istantanee agli utenti riguardo le loro attività e le attività del loro team"
     },
-    "button_text": "Esplora"
+    "cta": "Esplora"
   },
   "education": {
     "headline": "education",

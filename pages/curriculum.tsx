@@ -33,6 +33,16 @@ const CurriculumPage: NextPage = () => {
                   datespan={t("personal_work.ping4gitlab.datespan")}
                   name={t("personal_work.ping4gitlab.name")}
                   description={t("personal_work.ping4gitlab.description")}
+                  links={[
+                    {
+                      text: "App Store",
+                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531",
+                    },
+                    {
+                      text: "Play Store",
+                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531",
+                    },
+                  ]}
                   tags={[
                     "React Native",
                     "Expo",
@@ -58,7 +68,12 @@ const CurriculumPage: NextPage = () => {
                   datespan={t("personal_work.iregistro_website.datespan")}
                   name={t("personal_work.iregistro_website.name")}
                   description={t("personal_work.iregistro_website.description")}
-                  href="https://iregistro.it"
+                  links={[
+                    {
+                      text: t("personal_work.cta"),
+                      href: "https://iregistro.it",
+                    },
+                  ]}
                   tags={["React", "NextJs", "Github", "Figma"]}
                 >
                   <a href="https://iregistro.it">
@@ -74,7 +89,12 @@ const CurriculumPage: NextPage = () => {
                   datespan={t("personal_work.iregistro.datespan")}
                   name={t("personal_work.iregistro.name")}
                   description={t("personal_work.iregistro.description")}
-                  href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019"
+                  links={[
+                    {
+                      text: t("personal_work.cta"),
+                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
+                    },
+                  ]}
                   tags={["Swift", "Flask Python", "REST", "MVVM", "Core Data"]}
                 >
                   <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019">

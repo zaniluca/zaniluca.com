@@ -43,7 +43,7 @@
       "name": "Gitlab Mobile App for Notifications",
       "description": "Multiplatform app that leverages giltab mail notifications to send users instant push notifications about their and their team activities on gitlab"
     },
-    "button_text": "Check it out"
+    "cta": "Check it out"
   },
   "education": {
     "headline": "education",

@@ -28,11 +28,6 @@
   },
   "personal_work": {
     "headline": "personal work",
-    "cloudmover": {
-      "datespan": "Dic 2021 ― Presente",
-      "name": "Cloud migrations Web App",
-      "description": "Web app per migrazioni cloud facili e veloci realizzata con NodeJS apollo-express e servizi di pagamento Stripe"
-    },
     "iregistro_website": {
       "datespan": "Mar 2021 ― Apr 2021",
       "name": "React App Showcase Website",
@@ -42,6 +37,11 @@
       "datespan": "Giu 2020 ― Feb 2021",
       "name": "Fullstack iOS App",
       "description": "Applicazione iOS Nativa realizzata in Swift affiancata da un'api REST realizzata in Python Flask che tramite scraping attinge ai dati dei registri elettronici scolastici"
+    },
+    "ping4gitlab": {
+      "datespan": "Mar 2022 ― Present",
+      "name": "Gitlab Mobile App for Notifications",
+      "description": "App multiplatform che utilizza le email di gitlab per inviare notifiche istantanee agli utenti riguardo le loro attività e le attività del loro team"
     },
     "button_text": "Esplora"
   },

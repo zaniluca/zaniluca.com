@@ -30,18 +30,30 @@ const CurriculumPage: NextPage = () => {
               <SectionHeading name={t("personal_work.headline")} />
               <div className="mt-4 grid gap-8">
                 <PersonalWorkCard
-                  datespan={t("personal_work.cloudmover.datespan")}
-                  name={t("personal_work.cloudmover.name")}
-                  description={t("personal_work.cloudmover.description")}
+                  datespan={t("personal_work.ping4gitlab.datespan")}
+                  name={t("personal_work.ping4gitlab.name")}
+                  description={t("personal_work.ping4gitlab.description")}
                   tags={[
-                    "React",
-                    "GraphQL",
-                    "NodeJS",
+                    "React Native",
+                    "Expo",
+                    "Push Notifications",
                     "Typescript",
-                    "Stripe",
-                    "Jest",
+                    "Firebase",
                   ]}
-                />
+                >
+                  <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531">
+                    <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
+                      <img
+                        className="absolute mr-16 w-32 transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28"
+                        src="/images/ping4gitlab-1.png"
+                      />
+                      <img
+                        className="absolute z-10 ml-16 w-32 transition-transform group-hover:scale-105 group-hover:opacity-60 sm:w-28"
+                        src="/images/ping4gitlab-2.png"
+                      />
+                    </div>
+                  </a>
+                </PersonalWorkCard>
                 <PersonalWorkCard
                   datespan={t("personal_work.iregistro_website.datespan")}
                   name={t("personal_work.iregistro_website.name")}

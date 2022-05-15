@@ -64,8 +64,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
               href="mailto:contact-me@zaniluca.com"
               className="text-base font-normal text-gray-900 underline decoration-gray-200 decoration-2 hover:text-gray-700 sm:text-sm sm:leading-5"
             >
-              {/* TODO: Change it back to contact-me@zaniluca.com */}
-              zani.luca@icloud.com
+              contact-me@zaniluca.com
             </a>
           </div>
         </div>

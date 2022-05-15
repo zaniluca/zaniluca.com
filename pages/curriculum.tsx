@@ -40,7 +40,7 @@ const CurriculumPage: NextPage = () => {
                     },
                     {
                       text: "Play Store",
-                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531",
+                      href: "https://play.google.com/store/apps/details?id=com.zaniluca.ping4gitlab",
                     },
                   ]}
                   tags={[

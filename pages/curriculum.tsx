@@ -1,20 +1,16 @@
+import path from "path";
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import { loadTranslations } from "ni18n";
-import path from "path";
-import { useTranslation } from "react-i18next";
-import Disclaimer from "../components/Disclaimer";
-import Divider from "../components/Divider";
-import EducationCard from "../components/EducationCard";
-import HeadingSection from "../components/HeadingSection";
-import LanguageSkillsSection from "../components/LanguageSkillsSection";
-import PersonalWorkCard from "../components/PersonalWorkCard";
-import SectionHeading from "../components/SectionHeading";
 import { ni18nConfig } from "../ni18n.config";
+import CurriculumDisclaimer from "../components/curriculum/CurriculumDisclaimer";
+import Divider from "../components/Divider";
+import CurriculumHeadingSection from "../components/curriculum/sections/CurriculumHeadingSection";
+import CurriculumLanguageSkillsSection from "../components/curriculum/sections/CurriculumLanguageSkillsSection";
+import CurriculumEducationSection from "../components/curriculum/sections/CurriculumEducationSection";
+import CurriculumPersonalWorkSection from "../components/curriculum/sections/CurriculumPersonalWorkSection";
 
 const CurriculumPage: NextPage = () => {
-  const { t } = useTranslation("curriculum");
-
   return (
     <>
       <Head>
@@ -24,123 +20,16 @@ const CurriculumPage: NextPage = () => {
         <div className="absolute inset-0 bg-[url(/images/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] print:hidden"></div>
         <div className="relative w-full bg-white px-6 py-12 shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 print:shadow-none print:ring-0 md:mx-auto md:max-w-4xl lg:max-w-5xl lg:pt-16 lg:pb-28">
           <div className="mx-auto mt-8 md:max-w-3xl lg:max-w-4xl">
-            <HeadingSection />
+            <CurriculumHeadingSection />
             <Divider />
-            <div className="mt-8">
-              <SectionHeading name={t("personal_work.headline")} />
-              <div className="mt-4 grid gap-8">
-                <PersonalWorkCard
-                  datespan={t("personal_work.ping4gitlab.datespan")}
-                  name={t("personal_work.ping4gitlab.name")}
-                  description={t("personal_work.ping4gitlab.description")}
-                  links={[
-                    {
-                      text: "App Store",
-                      href: "https://apps.apple.com/it/app/ping-for-gitlab/id1620904531",
-                    },
-                    {
-                      text: "Play Store",
-                      href: "https://play.google.com/store/apps/details?id=com.zaniluca.ping4gitlab",
-                    },
-                    {
-                      text: "GitHub",
-                      href: "https://github.com/zaniluca/ping-4-gitlab",
-                    },
-                  ]}
-                  tags={[
-                    "React Native",
-                    "Expo",
-                    "Push Notifications",
-                    "Typescript",
-                  ]}
-                >
-                  <a href="https://github.com/zaniluca/ping-4-gitlab">
-                    <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
-                      <img
-                        className="absolute mr-16 w-32 transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28"
-                        src="/images/ping4gitlab-1.png"
-                      />
-                      <img
-                        className="absolute z-10 ml-16 w-32 transition-transform group-hover:scale-105 group-hover:opacity-60 sm:w-28"
-                        src="/images/ping4gitlab-2.png"
-                      />
-                    </div>
-                  </a>
-                </PersonalWorkCard>
-                <PersonalWorkCard
-                  datespan={t("personal_work.iregistro_website.datespan")}
-                  name={t("personal_work.iregistro_website.name")}
-                  description={t("personal_work.iregistro_website.description")}
-                  links={[
-                    {
-                      text: t("personal_work.cta"),
-                      href: "https://iregistro.it",
-                    },
-                  ]}
-                  tags={["React", "NextJs", "Github", "Figma"]}
-                >
-                  <a href="https://iregistro.it">
-                    <div className="group relative inline-flex h-52 w-full items-center justify-end overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
-                      <img
-                        className="absolute w-56 transition-transform group-hover:scale-110 sm:w-48"
-                        src="/images/iregistro-macbook.png"
-                      />
-                    </div>
-                  </a>
-                </PersonalWorkCard>
-                <PersonalWorkCard
-                  datespan={t("personal_work.iregistro.datespan")}
-                  name={t("personal_work.iregistro.name")}
-                  description={t("personal_work.iregistro.description")}
-                  links={[
-                    {
-                      text: t("personal_work.cta"),
-                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
-                    },
-                  ]}
-                  tags={["Swift", "Flask Python", "REST", "MVVM", "Core Data"]}
-                >
-                  <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019">
-                    <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
-                      <img
-                        className="absolute w-32 transition-transform group-hover:scale-110 sm:w-28"
-                        src="/images/iregistro-phone.png"
-                      />
-                    </div>
-                  </a>
-                </PersonalWorkCard>
-              </div>
-            </div>
+            <CurriculumPersonalWorkSection />
             <Divider />
-            <div className="mt-8">
-              <SectionHeading name={t("education.headline")} />
-              <div className="mt-8 grid gap-8 sm:mt-4">
-                <EducationCard
-                  datespan={t("education.polimi.datespan")}
-                  name={t("education.polimi.name")}
-                  description={t("education.polimi.description")}
-                />
-                <EducationCard
-                  datespan={t("education.itis.datespan")}
-                  name={t("education.itis.name")}
-                  description={t("education.itis.description")}
-                />
-                <EducationCard
-                  datespan={t("education.cisco.datespan")}
-                  name={t("education.cisco.name")}
-                  description={t("education.cisco.description")}
-                  certificationHref="/certificates/CCNA1.pdf"
-                />
-              </div>
-            </div>
+            <CurriculumEducationSection />
             <Divider />
-            <div className="mt-8">
-              <SectionHeading name={t("language.headline")} />
-              <LanguageSkillsSection />
-            </div>
+            <CurriculumLanguageSkillsSection />
           </div>
         </div>
-        <Disclaimer className="mx-auto mt-24 mb-12 px-4" />
+        <CurriculumDisclaimer className="mx-auto mt-24 mb-12 px-4" />
       </div>
     </>
   );

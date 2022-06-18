@@ -1,11 +1,13 @@
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
 
-type DisclaimerProps = {
+type CurriculumDisclaimerProps = {
   className?: string;
 };
 
-const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
+const CurriculumDisclaimer: React.FC<CurriculumDisclaimerProps> = ({
+  className,
+}) => {
   const { t } = useTranslation("curriculum");
 
   return (
@@ -20,4 +22,4 @@ const Disclaimer: React.FC<DisclaimerProps> = ({ className }) => {
   );
 };
 
-export default Disclaimer;
+export default CurriculumDisclaimer;

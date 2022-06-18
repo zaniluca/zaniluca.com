@@ -1,6 +1,4 @@
-type DividerProps = {};
-
-const Divider: React.FC<DividerProps> = () => {
+const Divider = () => {
   return (
     <div className="relative mx-0 py-8 xl:-mx-6">
       <div className="absolute inset-0 flex items-center" aria-hidden="true">

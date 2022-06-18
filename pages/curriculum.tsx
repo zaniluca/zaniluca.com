@@ -36,11 +36,15 @@ const CurriculumPage: NextPage = () => {
                   links={[
                     {
                       text: "App Store",
-                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531",
+                      href: "https://apps.apple.com/it/app/ping-for-gitlab/id1620904531",
                     },
                     {
                       text: "Play Store",
                       href: "https://play.google.com/store/apps/details?id=com.zaniluca.ping4gitlab",
+                    },
+                    {
+                      text: "GitHub",
+                      href: "https://github.com/zaniluca/ping-4-gitlab",
                     },
                   ]}
                   tags={[
@@ -48,10 +52,9 @@ const CurriculumPage: NextPage = () => {
                     "Expo",
                     "Push Notifications",
                     "Typescript",
-                    "Firebase",
                   ]}
                 >
-                  <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1620904531">
+                  <a href="https://github.com/zaniluca/ping-4-gitlab">
                     <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
                       <img
                         className="absolute mr-16 w-32 transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28"

@@ -46,12 +46,17 @@ const text: Variants = {
   },
 };
 
+type Link = {
+  text: string;
+  href: string;
+};
+
 type PersonalWorkCardProps = {
   children?: React.ReactNode;
   datespan: string;
   name: string;
   description: string;
-  href?: string;
+  links?: Link[];
   tags: string[];
 };
 
@@ -60,7 +65,7 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
   datespan,
   name,
   description,
-  href,
+  links,
   tags,
 }) => {
   const { t } = useTranslation("curriculum", { keyPrefix: "personal_work" });
@@ -92,11 +97,13 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
         >
           {description}
         </motion.p>
-        {href && (
-          <motion.div variants={text}>
-            <LinkButton className="mt-2" text={t("button_text")} href={href} />
-          </motion.div>
-        )}
+        <div className="flex space-x-4">
+          {links?.map((link) => (
+            <motion.div key={link.text} variants={text}>
+              <LinkButton className="mt-2" text={link.text} href={link.href} />
+            </motion.div>
+          ))}
+        </div>
         <div className="mt-6">
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (

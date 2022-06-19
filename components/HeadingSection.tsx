@@ -21,7 +21,6 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
               alt="Picture"
             />
           </div>
-          {/* <span className="absolute bottom-0 right-0 block h-10 w-10 rounded-full bg-green-400 ring-4 ring-white" /> */}
         </span>
       </div>
 
@@ -85,7 +84,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = () => {
             <LinkButton
               className="ml-3 text-base"
               text="GitHub"
-              href="https://github.com/ZaniLuca"
+              href="https://github.com/zaniluca"
             />
           </div>
         </div>

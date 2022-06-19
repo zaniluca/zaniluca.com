@@ -1,6 +1,6 @@
 {
   "heading": {
-    "bio": "Hi, I’m Luca, an Italian Fullstack Developer specialized in React, Typescript, Swift, and Python. I enjoy writing clean and maintainable code and staying up to date with the latest technology standards and best practices. I'm very passionate about programming, web graphics, and Cloud Computing",
+    "bio": "Hi, I’m Luca, an Italian Frontend Developer specialized in React, Typescript, Swift, and Python. I enjoy writing clean and maintainable code and staying up to date with the latest technology standards and best practices. I'm very passionate about programming, web graphics, and Cloud Computing",
     "info": {
       "gender": {
         "name": "Gender",
@@ -28,11 +28,6 @@
   },
   "personal_work": {
     "headline": "personal work",
-    "cloudmover": {
-      "datespan": "Dec 2021 ― Currently working on",
-      "name": "Cloud migrations Web App",
-      "description": "Fast and Easy to Use cloud migration service with NodeJS apollo-express backend and Stripe payment services"
-    },
     "iregistro_website": {
       "datespan": "Mar 2021 ― Apr 2021",
       "name": "React App Showcase Website",
@@ -43,7 +38,12 @@
       "name": "Fullstack iOS App",
       "description": "Swift native iOS app with custom Python Flask API that scrapes data from schools websites and helps students staying up to date"
     },
-    "button_text": "Check it out"
+    "ping4gitlab": {
+      "datespan": "Mar 2022 ― Present",
+      "name": "Gitlab Mobile App for Notifications",
+      "description": "Multiplatform app that leverages giltab mail notifications to send users instant push notifications about their and their team activities on gitlab"
+    },
+    "cta": "Check it out"
   },
   "education": {
     "headline": "education",

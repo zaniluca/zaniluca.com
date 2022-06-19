@@ -30,23 +30,53 @@ const CurriculumPage: NextPage = () => {
               <SectionHeading name={t("personal_work.headline")} />
               <div className="mt-4 grid gap-8">
                 <PersonalWorkCard
-                  datespan={t("personal_work.cloudmover.datespan")}
-                  name={t("personal_work.cloudmover.name")}
-                  description={t("personal_work.cloudmover.description")}
-                  tags={[
-                    "React",
-                    "GraphQL",
-                    "NodeJS",
-                    "Typescript",
-                    "Stripe",
-                    "Jest",
+                  datespan={t("personal_work.ping4gitlab.datespan")}
+                  name={t("personal_work.ping4gitlab.name")}
+                  description={t("personal_work.ping4gitlab.description")}
+                  links={[
+                    {
+                      text: "App Store",
+                      href: "https://apps.apple.com/it/app/ping-for-gitlab/id1620904531",
+                    },
+                    {
+                      text: "Play Store",
+                      href: "https://play.google.com/store/apps/details?id=com.zaniluca.ping4gitlab",
+                    },
+                    {
+                      text: "GitHub",
+                      href: "https://github.com/zaniluca/ping-4-gitlab",
+                    },
                   ]}
-                />
+                  tags={[
+                    "React Native",
+                    "Expo",
+                    "Push Notifications",
+                    "Typescript",
+                  ]}
+                >
+                  <a href="https://github.com/zaniluca/ping-4-gitlab">
+                    <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
+                      <img
+                        className="absolute mr-16 w-32 transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28"
+                        src="/images/ping4gitlab-1.png"
+                      />
+                      <img
+                        className="absolute z-10 ml-16 w-32 transition-transform group-hover:scale-105 group-hover:opacity-60 sm:w-28"
+                        src="/images/ping4gitlab-2.png"
+                      />
+                    </div>
+                  </a>
+                </PersonalWorkCard>
                 <PersonalWorkCard
                   datespan={t("personal_work.iregistro_website.datespan")}
                   name={t("personal_work.iregistro_website.name")}
                   description={t("personal_work.iregistro_website.description")}
-                  href="https://iregistro.it"
+                  links={[
+                    {
+                      text: t("personal_work.cta"),
+                      href: "https://iregistro.it",
+                    },
+                  ]}
                   tags={["React", "NextJs", "Github", "Figma"]}
                 >
                   <a href="https://iregistro.it">
@@ -62,7 +92,12 @@ const CurriculumPage: NextPage = () => {
                   datespan={t("personal_work.iregistro.datespan")}
                   name={t("personal_work.iregistro.name")}
                   description={t("personal_work.iregistro.description")}
-                  href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019"
+                  links={[
+                    {
+                      text: t("personal_work.cta"),
+                      href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
+                    },
+                  ]}
                   tags={["Swift", "Flask Python", "REST", "MVVM", "Core Data"]}
                 >
                   <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019">

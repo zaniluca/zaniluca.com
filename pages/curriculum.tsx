@@ -147,12 +147,16 @@ const CurriculumPage: NextPage = () => {
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
-  // Fix for vercel not loading locales: https://github.com/JCQuintas/ni18n/issues/49#issuecomment-1011137220
+  // Fix for vercel not loading locales:
+  // https://github.com/JCQuintas/ni18n/issues/49#issuecomment-1011137220
   path.resolve("./", "./public/locales");
+  const translations = await loadTranslations(ni18nConfig, locale, [
+    "curriculum",
+  ]);
 
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, ["curriculum"])),
+      ...translations,
     },
   };
 };

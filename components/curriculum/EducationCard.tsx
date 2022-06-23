@@ -1,6 +1,6 @@
 import { motion, Variants } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import LinkButton from "./LinkButton";
+import LinkButton from "../LinkButton";
 
 const wrapper: Variants = {
   offscreen: {

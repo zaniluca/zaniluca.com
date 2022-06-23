@@ -1,5 +1,5 @@
-import LinkButton from "./LinkButton";
-import { SVGProps } from "react";
+import LinkButton from "../LinkButton";
+import type { SVGProps } from "react";
 import { motion, Variants } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import LinkButton from "./LinkButton";
+import LinkButton from "../../LinkButton";
 
-type HeadingSectionProps = {};
-
-const HeadingSection: React.FC<HeadingSectionProps> = () => {
+const CurriculumHeadingSection = () => {
   const { t } = useTranslation("curriculum", { keyPrefix: "heading" });
 
   return (
@@ -112,4 +110,4 @@ const InfoCell: React.FC<InfoCellProps> = ({ className, name, value }) => {
   );
 };
 
-export default HeadingSection;
+export default CurriculumHeadingSection;

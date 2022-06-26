@@ -8,7 +8,7 @@ import CurriculumLanguageSkillsSection from "../components/curriculum/sections/C
 import CurriculumEducationSection from "../components/curriculum/sections/CurriculumEducationSection";
 import CurriculumPersonalWorkSection from "../components/curriculum/sections/CurriculumPersonalWorkSection";
 import type { CustomNextPage } from "../lib/types";
-import CurriculumLayout from "../components/layouts/CurriculumLayout";
+import CurriculumLayout from "../layouts/CurriculumLayout";
 
 const CurriculumPage: CustomNextPage = () => {
   return (

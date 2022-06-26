@@ -1,4 +1,4 @@
-import CurriculumDisclaimer from "../curriculum/CurriculumDisclaimer";
+import CurriculumDisclaimer from "../components/curriculum/CurriculumDisclaimer";
 
 const CurriculumLayout: React.FC = ({ children }) => {
   return (

@@ -1,13 +1,8 @@
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
+import type { WithClassname } from "../../lib/types";
 
-type CurriculumDisclaimerProps = {
-  className?: string;
-};
-
-const CurriculumDisclaimer: React.FC<CurriculumDisclaimerProps> = ({
-  className,
-}) => {
+const CurriculumDisclaimer: React.FC<WithClassname> = ({ className }) => {
   const { t } = useTranslation("curriculum");
 
   return (

@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import type { SVGProps } from "react";
+import type { WithClassname } from "../lib/types";
 
-type LinkButtonProps = {
-  className?: string;
+type LinkButtonProps = WithClassname & {
   text: string;
   href: string;
 };

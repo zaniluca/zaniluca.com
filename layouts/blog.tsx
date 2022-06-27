@@ -18,7 +18,7 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({ children, post }) => {
             alt="Luca Zani"
             height={24}
             width={24}
-            src="/profile.jpg"
+            src="/images/profile.jpg"
             className="rounded-full"
           />
           <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">

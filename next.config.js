@@ -1,7 +1,9 @@
+const { withContentlayer } = require("next-contentlayer");
+
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+const nextConfig = withContentlayer({
   i18n: {
     locales: ["it", "en"],
     defaultLocale: "en",
@@ -28,6 +30,6 @@ const nextConfig = {
 
     return config;
   },
-};
+});
 
 module.exports = nextConfig;

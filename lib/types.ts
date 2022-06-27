@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-export type CustomNextPage = NextPage & {
+export type CustomNextPage<P = {}> = NextPage<P> & {
   PageLayout?: React.ComponentType;
   title?: string;
 };

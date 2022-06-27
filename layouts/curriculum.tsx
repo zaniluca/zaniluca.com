@@ -1,6 +1,10 @@
 import CurriculumDisclaimer from "../components/curriculum/CurriculumDisclaimer";
 
-const CurriculumLayout: React.FC = ({ children }) => {
+type CurriculumLayoutProps = {
+  children: React.ReactChild | React.ReactChild[];
+};
+
+const CurriculumLayout = ({ children }: CurriculumLayoutProps) => {
   return (
     <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-8 print:bg-white lg:py-12">
       <div className="absolute inset-0 bg-[url(/images/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] print:hidden"></div>

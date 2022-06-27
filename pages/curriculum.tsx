@@ -8,11 +8,11 @@ import CurriculumLanguageSkillsSection from "../components/curriculum/sections/C
 import CurriculumEducationSection from "../components/curriculum/sections/CurriculumEducationSection";
 import CurriculumPersonalWorkSection from "../components/curriculum/sections/CurriculumPersonalWorkSection";
 import type { CustomNextPage } from "../lib/types";
-import CurriculumLayout from "../layouts/CurriculumLayout";
+import CurriculumLayout from "../layouts/curriculum";
 
 const CurriculumPage: CustomNextPage = () => {
   return (
-    <>
+    <CurriculumLayout>
       <CurriculumHeadingSection />
       <Divider />
       <CurriculumPersonalWorkSection />
@@ -20,12 +20,11 @@ const CurriculumPage: CustomNextPage = () => {
       <CurriculumEducationSection />
       <Divider />
       <CurriculumLanguageSkillsSection />
-    </>
+    </CurriculumLayout>
   );
 };
 
 CurriculumPage.title = "Developer Curriculum";
-CurriculumPage.PageLayout = CurriculumLayout;
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   // Fix for vercel not loading locales:

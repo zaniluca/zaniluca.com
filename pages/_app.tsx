@@ -17,7 +17,7 @@ function App({ Component, pageProps }: CustomAppProps) {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    i18n.changeLanguage(router.locale);
+    // i18n.changeLanguage(router.locale);
   }, [router.locale]);
 
   return (
@@ -25,13 +25,13 @@ function App({ Component, pageProps }: CustomAppProps) {
       <Head>
         <title>{Component.title ? Component.title + " ― " : ""}Zani Luca</title>
       </Head>
-      {Component.PageLayout ? (
+      {/* {Component.PageLayout ? (
         <Component.PageLayout>
           <Component {...pageProps} />
         </Component.PageLayout>
-      ) : (
-        <Component {...pageProps} />
-      )}
+      ) : ( */}
+      <Component {...pageProps} />
+      {/* )} */}
     </>
   );
 }

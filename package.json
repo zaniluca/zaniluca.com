@@ -11,7 +11,7 @@
     "contentlayer": "^0.2.5",
     "framer-motion": "^6.2.4",
     "i18next": "^21.6.11",
-    "next": "12.1.0",
+    "next": "12.2.0",
     "next-contentlayer": "^0.2.5",
     "ni18n": "^1.0.3",
     "preact": "^10.6.5",

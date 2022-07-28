@@ -1,17 +1,64 @@
 ---
-title: Lorem Ipsum
+title: CI/CD on Github for Expo Projects
 publishedAt: "2017-07-15"
-summary: "Visualize my journey through the scenic lands of Norway with rich, stunning pictures and daily travel logs."
+summary: "A comprehensive guide on how to setup continuos integration for your expo apps."
 ---
 
-Ullamco et nostrud magna commodo nostrud occaecat quis pariatur id ipsum. Ipsum
-consequat enim id excepteur consequat nostrud esse esse fugiat dolore.
-Reprehenderit occaecat exercitation non cupidatat in eiusmod laborum ex eu
-fugiat aute culpa pariatur. Irure elit proident consequat veniam minim ipsum ex
-pariatur.
+[Expo](https://expo.dev) is a great tool for building multiplatform apps using the magic of React Native and it's easily one of the faster ways to make a mobile app, especially for web developers.
 
-Mollit nisi cillum exercitation minim officia velit laborum non Lorem
-adipisicing dolore. Labore commodo consectetur commodo velit adipisicing irure
-dolore dolor reprehenderit aliquip. Reprehenderit cillum mollit eiusmod
-excepteur elit ipsum aute pariatur in. Cupidatat ex culpa velit culpa ad non
-labore exercitation irure laborum.
+But how we can make it even faster? Of course with _automation_!
+
+Fortunately, one of the easiest ways to automate your code tasks is provided basically for free by GitHub, and it's called [GitHub Actions](https://github.com/features/actions).
+
+In this guide, we'll learn how to set up a basic **CI/CD** environment to automatize your app builds both with [EAS](https://expo.dev/eas) infrastructure or simply with the containerized environment provided by GitHub Actions.
+
+> This guide will assume a basic understand of how CI/CD works with GitHub Actions but everything needed can be learnd on the [offical docs](https://docs.github.com/en/actions)
+
+Let's start by creating a brand new expo app by running the following command:
+
+```bash
+npx create-expo-app expo-cicd-github-actions
+```
+
+### test
+
+Then let's install the CLIs we need if we haven't done so already
+
+```bash
+npm i -g eas-cli expo-cli
+```
+
+In this tutorial, we'll cover every fundamental topic in a good continuous integration and delivery system, so we'll include **Unit Tests**! For this purpose, we'll use **Jest** which offers a great integration for expo apps.
+
+Let's start by installing the packages we'll need
+
+```bash
+expo install jest-expo jest
+```
+
+In **package.json** let's add the test script and the jest configuration _(this can also be placed in a separate file "jest.config.js")_. Add a new script called `test` inside the scripts
+
+```json
+{
+  "scripts": {
+    ...
+    "test": "jest"
+  },
+  ...
+  "jest": {
+    "preset": "jest-expo"
+  },
+}
+```
+
+Then for demo purposes let's write an example test to check that everything is working as expected.
+
+Create a new folder `__tests__` and inside it place a file ending in `.test.js` and add some example test cases like this one for example
+
+```js
+it("works", () => {
+  expect(1).toBe(1);
+});
+```
+
+Try running `npm run test` and if we did everything right it should succeed!

@@ -36,7 +36,7 @@ const BlogPage: CustomNextPage<Props> = ({ post }) => {
           {post.readingTime.text}
         </p>
       </div>
-      <div className="dark:prose-dark prose mt-4 w-full max-w-none">
+      <div className="prose mt-4  w-full max-w-none dark:prose-dark">
         <Component />
       </div>
       <div className="mt-4 text-sm text-gray-700 dark:text-gray-300">

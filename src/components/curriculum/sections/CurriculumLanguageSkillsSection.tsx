@@ -1,5 +1,4 @@
 import { motion, Variants } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import LanguageScore from "../LanguageScore";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
 
@@ -17,11 +16,9 @@ const wrapper: Variants = {
 };
 
 const CurriculumLanguageSkillsSection = () => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "language" });
-
   return (
     <div className="mt-8">
-      <CurriculumSectionHeading name={t("headline")} />
+      <CurriculumSectionHeading name="language skills" />
       <motion.div
         variants={wrapper}
         initial="offscreen"
@@ -29,9 +26,9 @@ const CurriculumLanguageSkillsSection = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="mt-8 grid gap-8 sm:mt-4 sm:grid-flow-col"
       >
-        <LanguageScore name={t("english_written")} rating={4} />
-        <LanguageScore name={t("english_spoken")} rating={4} />
-        <LanguageScore name={t("italian")} rating={5} />
+        <LanguageScore name="English Written (B2)" rating={4} />
+        <LanguageScore name="English Spoken (B2)" rating={4} />
+        <LanguageScore name="Italian (native)" rating={5} />
       </motion.div>
     </div>
   );

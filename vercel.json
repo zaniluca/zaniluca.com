@@ -1,5 +1,8 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    { "source": "/curriculum", "destination": "/", "permanent": false }
+  ]
 }

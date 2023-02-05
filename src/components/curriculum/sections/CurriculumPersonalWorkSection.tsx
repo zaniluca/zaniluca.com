@@ -1,18 +1,15 @@
-import { useTranslation } from "react-i18next";
 import PersonalWorkCard from "../PersonalWorkCard";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
 
 const CurriculumPersonalWorkSection = () => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "personal_work" });
-
   return (
     <div className="mt-8">
-      <CurriculumSectionHeading name={t("headline")} />
+      <CurriculumSectionHeading name="personal work" />
       <div className="mt-4 grid gap-8">
         <PersonalWorkCard
-          datespan={t("ping4gitlab.datespan")}
-          name={t("ping4gitlab.name")}
-          description={t("ping4gitlab.description")}
+          datespan="Mar 2022 ― Present"
+          name="Gitlab Mobile App for Notifications"
+          description="Multiplatform app that leverages giltab mail notifications to send users instant push notifications about their and their team activities on gitlab"
           links={[
             {
               text: "App Store",
@@ -43,12 +40,12 @@ const CurriculumPersonalWorkSection = () => {
           </a>
         </PersonalWorkCard>
         <PersonalWorkCard
-          datespan={t("iregistro_website.datespan")}
-          name={t("iregistro_website.name")}
-          description={t("iregistro_website.description")}
+          datespan="Mar 2021 ― Apr 2021"
+          name="React App Showcase Website"
+          description="React Website to showcase my app made in React with the NextJs Framework and Tailwind CSS"
           links={[
             {
-              text: t("cta"),
+              text: "Check it out",
               href: "https://iregistro.it",
             },
           ]}
@@ -64,12 +61,12 @@ const CurriculumPersonalWorkSection = () => {
           </a>
         </PersonalWorkCard>
         <PersonalWorkCard
-          datespan={t("iregistro.datespan")}
-          name={t("iregistro.name")}
-          description={t("iregistro.description")}
+          datespan="June 2020 ― Feb 2021"
+          name="Fullstack iOS App"
+          description="Swift native iOS app with custom Python Flask API that scrapes data from schools websites and helps students staying up to date"
           links={[
             {
-              text: t("cta"),
+              text: "Check it out",
               href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
             },
           ]}

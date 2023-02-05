@@ -1,0 +1,39 @@
+---
+import CurriculumDisclaimer from "../components/curriculum/CurriculumDisclaimer";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="h-full">
+    <div
+      class="min-h-screen bg-gray-50 py-8 flex flex-col justify-center relative overflow-hidden lg:py-12"
+    >
+      <div
+        class="absolute inset-0 bg-[url(/images/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+      >
+      </div>
+      <div
+        class="relative w-full px-6 py-12 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-4xl md:mx-auto lg:max-w-5xl lg:pt-16 lg:pb-28"
+      >
+        <div class="mx-auto mt-8 md:max-w-3xl lg:max-w-4xl">
+          <slot />
+        </div>
+      </div>
+      <CurriculumDisclaimer className="mx-auto mt-24 mb-12 px-4" />
+    </div>
+  </body>
+</html>

@@ -1,7 +1,6 @@
 import LinkButton from "../LinkButton";
 import type { SVGProps } from "react";
 import { motion, Variants } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 const wrapper: Variants = {
   offscreen: {
@@ -28,8 +27,6 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
   rating,
   certificationHref,
 }) => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "language" });
-
   return (
     <motion.div variants={wrapper} className="grid grid-rows-3 gap-2">
       <h4 className="text-base font-medium leading-6 text-gray-900 sm:text-sm sm:leading-5">
@@ -58,7 +55,7 @@ const LanguageScore: React.FC<LanguageScoreProps> = ({
       {certificationHref && (
         <LinkButton
           className="mt-2"
-          text={t("button_text")}
+          text="Certification"
           href={certificationHref}
         />
       )}

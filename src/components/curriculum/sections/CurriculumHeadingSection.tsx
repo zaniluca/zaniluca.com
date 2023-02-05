@@ -1,19 +1,12 @@
-import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import LinkButton from "../../LinkButton";
 
 const CurriculumHeadingSection = () => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "heading" });
-
   return (
     <div>
       <div>
         <span className="relative inline-block">
           <div className="relative h-44 w-44 rounded-full ring-2 ring-gray-300">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
+            <img
               className="rounded-full"
               src="/images/profile.jpg"
               alt="Picture"
@@ -27,24 +20,19 @@ const CurriculumHeadingSection = () => {
           Luca Zani
         </h1>
         <p className="mt-4 max-w-screen-lg text-lg font-normal leading-7 text-gray-500">
-          {t("bio")}
+          Hi, I’m Luca, an Italian Frontend Developer specialized in React,
+          Typescript, Swift, and Python. I enjoy writing clean and maintainable
+          code and staying up to date with the latest technology standards and
+          best practices. I'm very passionate about programming, web graphics,
+          and Cloud Computing
         </p>
         <div className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-3">
-          <InfoCell
-            name={t("info.birthday.name")}
-            value={t("info.birthday.value")}
-          />
-          <InfoCell
-            name={t("info.gender.name")}
-            value={t("info.gender.value")}
-          />
-          <InfoCell
-            name={t("info.nationality.name")}
-            value={t("info.nationality.value")}
-          />
+          <InfoCell name="Birthday" value="31 January 2002" />
+          <InfoCell name="Gender" value="Male" />
+          <InfoCell name="Nationality" value="Italian" />
           <div>
             <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
-              {t("info.phone.name")}
+              Phone
             </p>
             <a
               href="tel:+393383106419"
@@ -55,7 +43,7 @@ const CurriculumHeadingSection = () => {
           </div>
           <div>
             <p className="text-base font-medium uppercase text-gray-500 sm:text-sm">
-              {t("info.email.name")}
+              Email
             </p>
             <a
               href="mailto:contact-me@zaniluca.com"
@@ -69,8 +57,8 @@ const CurriculumHeadingSection = () => {
           <div>
             <LinkButton
               className="text-base"
-              text={t("download_button")}
-              href={t("download_link")}
+              text="Download Curriculum as PDF"
+              href="https://s3.eu-west-2.amazonaws.com/zaniluca.com-curriculums-prod-s3/en_zani_luca.pdf"
             />
           </div>
           <div>

@@ -1,5 +1,4 @@
 import { motion, Variants } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import LinkButton from "../LinkButton";
 
 const wrapper: Variants = {
@@ -43,8 +42,6 @@ const EducationCard: React.FC<EducationCardProps> = ({
   description,
   datespan,
 }) => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "education" });
-
   return (
     <motion.div
       variants={wrapper}
@@ -75,7 +72,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
         <motion.div variants={text}>
           <LinkButton
             className="mt-2"
-            text={t("button_text")}
+            text="Certification"
             href={certificationHref}
           />
         </motion.div>

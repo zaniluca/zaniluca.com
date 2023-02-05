@@ -1,8 +1,8 @@
 ---
 import CurriculumEducationSection from "../components/curriculum/sections/CurriculumEducationSection";
 import CurriculumHeadingSection from "../components/curriculum/sections/CurriculumHeadingSection";
-import CurriculumLanguageSkillsSection from "../components/curriculum/sections/CurriculumLanguageSkillsSection";
 import CurriculumPersonalWorkSection from "../components/curriculum/sections/CurriculumPersonalWorkSection";
+import CurriculumWorkExperience from "../components/curriculum/sections/CurriculumWorkExperienceSection";
 import Divider from "../components/Divider";
 import CurriculumLayout from "../layouts/CurriculumLayout.astro";
 ---
@@ -10,9 +10,9 @@ import CurriculumLayout from "../layouts/CurriculumLayout.astro";
 <CurriculumLayout title="Developer Curriculum">
   <CurriculumHeadingSection />
   <Divider />
+  <CurriculumWorkExperience client:only />
+  <Divider />
   <CurriculumPersonalWorkSection client:visible />
   <Divider />
   <CurriculumEducationSection client:visible />
-  <Divider />
-  <CurriculumLanguageSkillsSection client:visible />
 </CurriculumLayout>

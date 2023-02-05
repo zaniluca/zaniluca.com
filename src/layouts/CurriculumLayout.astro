@@ -20,20 +20,10 @@ const { title } = Astro.props;
   </head>
   <body class="h-full">
     <div
-      class="min-h-screen bg-gray-50 py-8 flex flex-col justify-center relative overflow-hidden lg:py-12"
+      class="mx-auto mt-8 max-w-screen-md w-full px-6 py-12 lg:pt-16 lg:pb-28"
     >
-      <div
-        class="absolute inset-0 bg-[url(/images/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
-      >
-      </div>
-      <div
-        class="relative w-full px-6 py-12 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-4xl md:mx-auto lg:max-w-5xl lg:pt-16 lg:pb-28"
-      >
-        <div class="mx-auto mt-8 md:max-w-3xl lg:max-w-4xl">
-          <slot />
-        </div>
-      </div>
-      <CurriculumDisclaimer className="mx-auto mt-24 mb-12 px-4" />
+      <slot />
     </div>
   </body>
+  <CurriculumDisclaimer className="mx-auto mt-24 mb-12 px-4" />
 </html>

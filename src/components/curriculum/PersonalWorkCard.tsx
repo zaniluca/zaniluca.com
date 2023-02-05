@@ -1,5 +1,4 @@
 import { motion, Variants } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import Badge from "../Badge";
 import LinkButton from "../LinkButton";
 
@@ -68,8 +67,6 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
   links,
   tags,
 }) => {
-  const { t } = useTranslation("curriculum", { keyPrefix: "personal_work" });
-
   return (
     <motion.div
       variants={wrapper}

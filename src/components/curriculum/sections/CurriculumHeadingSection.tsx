@@ -17,14 +17,13 @@ const CurriculumHeadingSection = () => {
 
       <div className="mt-8">
         <h1 className="text-3xl font-medium leading-7 text-gray-900">
-          Luca Zani
+          Hey! I'm Luca
         </h1>
         <p className="mt-4 max-w-screen-lg text-lg font-normal leading-7 text-gray-500">
-          Hi, I’m Luca, an Italian Frontend Developer specialized in React,
-          Typescript, Swift, and Python. I enjoy writing clean and maintainable
-          code and staying up to date with the latest technology standards and
-          best practices. I'm very passionate about programming, web graphics,
-          and Cloud Computing
+          an Italian Frontend Developer specialized in React, Typescript, Swift,
+          and Python. I enjoy writing clean and maintainable code and staying up
+          to date with the latest technology standards and best practices. I'm
+          very passionate about programming, web graphics, and Cloud Computing
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
           <div>

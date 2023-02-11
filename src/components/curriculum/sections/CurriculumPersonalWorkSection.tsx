@@ -3,7 +3,7 @@ import CurriculumSectionHeading from "../CurriculumSectionHeading";
 
 const CurriculumPersonalWorkSection = () => {
   return (
-    <div className="mt-8">
+    <div className="my-8">
       <CurriculumSectionHeading name="personal work" />
       <div className="mt-4 grid gap-8">
         <PersonalWorkCard

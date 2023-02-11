@@ -10,9 +10,9 @@ import CurriculumLayout from "../layouts/CurriculumLayout.astro";
 <CurriculumLayout title="Developer Curriculum">
   <CurriculumHeadingSection />
   <Divider />
-  <CurriculumWorkExperience client:only />
+  <CurriculumWorkExperience client:load />
   <Divider />
-  <CurriculumPersonalWorkSection client:visible />
+  <CurriculumPersonalWorkSection client:load />
   <Divider />
-  <CurriculumEducationSection client:visible />
+  <CurriculumEducationSection client:load />
 </CurriculumLayout>

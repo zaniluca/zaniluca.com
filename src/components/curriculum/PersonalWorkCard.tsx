@@ -84,13 +84,13 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
         </motion.span>
         <motion.h4
           variants={text}
-          className="mt-2 text-base font-medium leading-6 text-gray-900"
+          className="mt-2 text-lg font-medium leading-6 text-gray-900"
         >
           {name}
         </motion.h4>
         <motion.p
           variants={text}
-          className="mt-2 text-base font-normal leading-6 text-gray-500 sm:text-sm sm:leading-5"
+          className="mt-2 text-base font-normal leading-6 text-gray-500 "
         >
           {description}
         </motion.p>

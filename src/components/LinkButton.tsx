@@ -13,7 +13,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ className, text, href }) => {
       href={href}
       className={classNames(
         className,
-        "group inline-flex items-center text-base font-medium  leading-6 text-gray-900 hover:text-gray-700 sm:text-sm sm:leading-5"
+        "group inline-flex items-center text-base font-medium leading-6 text-gray-900 hover:text-gray-700 sm:text-sm sm:leading-5"
       )}
     >
       {text}

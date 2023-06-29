@@ -5,7 +5,7 @@ const CurriculumHeadingSection = () => {
     <div>
       <div>
         <span className="relative inline-block">
-          <div className="relative h-24 w-24 rounded-full ring-2 ring-gray-300">
+          <div className="relative h-24 w-24 rounded-full border border-gray-300">
             <img
               className="rounded-full"
               src="/images/profile.jpg"

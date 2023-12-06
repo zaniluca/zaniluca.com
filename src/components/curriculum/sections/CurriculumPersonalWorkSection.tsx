@@ -31,10 +31,12 @@ const CurriculumPersonalWorkSection = () => {
               <img
                 className="absolute mr-16 w-32 transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28"
                 src="/images/ping4gitlab-1.png"
+                alt="ping4gitlab iphone screenshot 1"
               />
               <img
                 className="absolute z-10 ml-16 w-32 transition-transform group-hover:scale-105 group-hover:opacity-60 sm:w-28"
                 src="/images/ping4gitlab-2.png"
+                alt="ping4gitlab iphone screenshot 2"
               />
             </div>
           </a>
@@ -56,6 +58,7 @@ const CurriculumPersonalWorkSection = () => {
               <img
                 className="absolute w-56 transition-transform group-hover:scale-110 sm:w-48"
                 src="/images/iregistro-macbook.png"
+                alt="iregistro.it macbook screenshot"
               />
             </div>
           </a>
@@ -77,6 +80,7 @@ const CurriculumPersonalWorkSection = () => {
               <img
                 className="absolute w-32 transition-transform group-hover:scale-110 sm:w-28"
                 src="/images/iregistro-phone.png"
+                alt="iregistro.it iphone screenshot"
               />
             </div>
           </a>

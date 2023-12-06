@@ -9,7 +9,7 @@ const CurriculumHeadingSection = () => {
             <img
               className="rounded-full"
               src="/images/profile.jpg"
-              alt="Picture"
+              alt="Luca Zani"
             />
           </div>
         </span>

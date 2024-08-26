@@ -1,6 +1,7 @@
 import EducationCard from "../EducationCard";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
 import { motion, type Variants } from "framer-motion";
+import KampaayLogo from "../../KampaayLogo";
 
 const wrapper: Variants = {
   offscreen: {
@@ -52,12 +53,13 @@ const CurriculumWorkExperience = () => {
             variants={text}
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Frontend Developer @{" "}
+            Frontend Developer @
             <a
               target="_blank"
               href="https://www.kampaay.com/"
-              className="underline decoration-gray-400 decoration-dotted underline-offset-4 transition-colors hover:text-gray-500"
+              className="group underline decoration-gray-400 decoration-dotted underline-offset-4 transition-colors hover:text-gray-500"
             >
+              <KampaayLogo className="inline h-6 w-6 text-[#f97b62] transition-transform group-hover:-rotate-12 " />
               Kampaay
             </a>
           </motion.h4>

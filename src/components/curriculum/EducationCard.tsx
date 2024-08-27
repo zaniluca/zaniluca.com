@@ -1,5 +1,4 @@
 import { motion, type Variants } from "framer-motion";
-import LinkButton from "../LinkButton";
 
 const wrapper: Variants = {
   offscreen: {
@@ -33,11 +32,9 @@ type EducationCardProps = {
   datespan: string;
   name: string;
   description: string;
-  certificationHref?: string;
 };
 
 const EducationCard: React.FC<EducationCardProps> = ({
-  certificationHref,
   name,
   description,
   datespan,
@@ -68,15 +65,6 @@ const EducationCard: React.FC<EducationCardProps> = ({
       >
         {description}
       </motion.p>
-      {certificationHref && (
-        <motion.div variants={text}>
-          <LinkButton
-            className="mt-2"
-            text="Certification"
-            href={certificationHref}
-          />
-        </motion.div>
-      )}
     </motion.div>
   );
 };

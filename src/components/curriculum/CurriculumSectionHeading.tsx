@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type CurriculumSectionHeadingProps = {
   name: string;
 };
@@ -6,9 +8,15 @@ const CurriculumSectionHeading: React.FC<CurriculumSectionHeadingProps> = ({
   name,
 }) => {
   return (
-    <h2 className="text-base font-medium uppercase tracking-widest text-gray-400">
+    <motion.h2
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="text-base font-medium uppercase tracking-widest text-gray-400"
+    >
       {name}
-    </h2>
+    </motion.h2>
   );
 };
 

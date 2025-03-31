@@ -23,6 +23,15 @@
         font-display: swap;
       }
     </style>
+    <style is:global>
+      /* Show background color when printing page */
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+    </style>
   </head>
   <body class="h-full antialiased">
     <div

@@ -69,34 +69,39 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
 }) => {
   return (
     <motion.div
-      variants={wrapper}
+      // variants={wrapper}
+      // initial="offscreen"
+      // whileInView="onscreen"
+      // viewport={{ once: true, amount: 0.2 }}
       className="grid gap-8 sm:grid-cols-2 sm:gap-4"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.div variants={text}>
+      <motion.div
+      // variants={text}
+      >
         <motion.span
-          variants={text}
+          // variants={text}
           className="mt-2 text-sm font-normal leading-5 text-gray-500"
         >
           {datespan}
         </motion.span>
         <motion.h4
-          variants={text}
+          // variants={text}
           className="mt-2 text-lg font-medium leading-6 text-gray-900"
         >
           {name}
         </motion.h4>
         <motion.p
-          variants={text}
+          // variants={text}
           className="mt-2 text-base font-normal leading-6 text-gray-500 "
         >
           {description}
         </motion.p>
         <div className="flex space-x-4">
           {links?.map((link) => (
-            <motion.div key={link.text} variants={text}>
+            <motion.div
+              key={link.text}
+              // variants={text}
+            >
               <LinkButton className="mt-2" text={link.text} href={link.href} />
             </motion.div>
           ))}
@@ -110,7 +115,7 @@ const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({
         </div>
       </motion.div>
       <motion.div
-        variants={image}
+        // variants={image}
         className="order-first sm:order-last sm:place-self-end"
       >
         {children}

@@ -3,7 +3,7 @@ import CurriculumSectionHeading from "../CurriculumSectionHeading";
 
 const CurriculumEducationSection = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="education" />
       <div className="mt-8 grid gap-8 sm:mt-4">
         <EducationCard

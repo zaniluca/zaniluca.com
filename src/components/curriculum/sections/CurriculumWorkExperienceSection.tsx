@@ -1,6 +1,6 @@
 import EducationCard from "../EducationCard";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
-import { motion, type Variants } from "framer-motion";
+import { motion, MotionConfig, type Variants } from "framer-motion";
 import KampaayLogo from "../../KampaayLogo";
 
 const wrapper: Variants = {
@@ -33,24 +33,24 @@ const text: Variants = {
 
 const CurriculumWorkExperience = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="work experience" />
       <div className="mt-8 grid gap-8 sm:mt-4">
         <motion.div
-          variants={wrapper}
-          initial="offscreen"
-          whileInView="onscreen"
+          // variants={wrapper}
+          // initial="offscreen"
+          // whileInView="onscreen"
           className="grid gap-2"
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.span
-            variants={text}
+            // variants={text}
             className="text-sm font-normal leading-5 text-gray-500"
           >
             Mar 2022 ― Apr 2023
           </motion.span>
           <motion.h4
-            variants={text}
+            // variants={text}
             className="text-lg font-medium leading-6 text-gray-900"
           >
             Frontend Developer @
@@ -64,7 +64,7 @@ const CurriculumWorkExperience = () => {
             </a>
           </motion.h4>
           <motion.p
-            variants={text}
+            // variants={text}
             className="max-w-lg text-base font-normal leading-6 text-gray-500"
           >
             Contributed to a rapidly growing startup by developing

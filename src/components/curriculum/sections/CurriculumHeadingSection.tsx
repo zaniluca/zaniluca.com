@@ -21,7 +21,7 @@ const CurriculumHeadingSection = () => {
           very passionate about programming, web graphics, and Cloud Computing
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div>
+          <div className="print:hidden">
             <LinkButton
               className="text-base"
               text="Download Curriculum as PDF"

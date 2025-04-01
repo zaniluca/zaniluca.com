@@ -1,6 +1,6 @@
 import EducationCard from "../EducationCard";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variants } from "motion/react";
 import KampaayLogo from "../../KampaayLogo";
 
 const wrapper: Variants = {

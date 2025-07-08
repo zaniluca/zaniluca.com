@@ -6,20 +6,21 @@ import CurriculumWorkExperience from "../components/curriculum/sections/Curricul
 import Divider from "../components/Divider";
 import CurriculumLayout from "../layouts/CurriculumLayout.astro";
 ---
+
 <CurriculumLayout title="Zani Luca">
   <CurriculumHeadingSection client:load />
   <Divider client:load />
   <CurriculumWorkExperience client:load />
   <Divider client:load />
+  <!-- Printing -->
   <div class="hidden print:block">
     <CurriculumEducationSection client:load />
-    <div class="print:break-before-page">
+    <div class="break-before-page mt-20">
       <CurriculumPersonalWorkSection client:load />
     </div>
   </div>
+  <!-- Not printing -->
   <div class="print:hidden">
     <CurriculumPersonalWorkSection client:load />
-    <Divider client:load />
-    <CurriculumEducationSection client:load />
   </div>
 </CurriculumLayout>

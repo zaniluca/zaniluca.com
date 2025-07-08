@@ -21,13 +21,6 @@ const CurriculumHeadingSection = () => {
           very passionate about programming, web graphics, and Cloud Computing
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div className="print:hidden">
-            <LinkButton
-              className="text-base"
-              text="Download Curriculum as PDF"
-              href="https://s3.eu-west-2.amazonaws.com/zaniluca.com-curriculums-prod-s3/en_zani_luca.pdf"
-            />
-          </div>
           <div>
             <LinkButton
               className="text-base"

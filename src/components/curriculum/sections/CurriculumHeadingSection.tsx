@@ -20,19 +20,22 @@ const CurriculumHeadingSection = () => {
           to date with the latest technology standards and best practices. I'm
           very passionate about programming, web graphics, and Cloud Computing
         </p>
-        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div>
-            <LinkButton
-              className="text-base"
-              text="LinkedIn"
-              href="https://linkedin.com/in/zaniluca"
-            />
-            <LinkButton
-              className="ml-3 text-base"
-              text="GitHub"
-              href="https://github.com/zaniluca"
-            />
-          </div>
+        <div className="mt-5 gap-6 flex items-center justify-start">
+          <LinkButton
+            className="text-base print:hidden"
+            text="LinkedIn"
+            href="https://linkedin.com/in/zaniluca"
+          />
+          <LinkButton
+            className="text-base print:hidden"
+            text="GitHub"
+            href="https://github.com/zaniluca"
+          />
+          <LinkButton
+            className="text-base hidden print:inline-flex"
+            text="luca@zaniluca.com"
+            href="mailto:luca@zaniluca.com"
+          />
         </div>
       </div>
     </div>

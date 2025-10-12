@@ -1,7 +1,7 @@
-import EducationCard from "../EducationCard";
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
 import { motion, type Variants } from "motion/react";
 import KampaayLogo from "../../KampaayLogo";
+import CiaoElsaLogo from "../../CiaoElsaLogo";
 
 const wrapper: Variants = {
   offscreen: {
@@ -36,6 +36,38 @@ const CurriculumWorkExperience = () => {
     <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="work experience" />
       <div className="mt-8 grid gap-8 sm:mt-4">
+        <motion.div
+          // variants={wrapper}
+          // initial="offscreen"
+          // whileInView="onscreen"
+          className="grid gap-2"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <motion.span
+            // variants={text}
+            className="text-sm font-normal leading-5 text-gray-500"
+          >
+            Apr 2025 ― Present
+          </motion.span>
+          <motion.h4
+            // variants={text}
+            className="text-lg font-medium leading-6 text-gray-900"
+          >
+            Freelance Software Engineer @
+            <a
+              target="_blank"
+              href="https://www.ciaoelsa.com/"
+              className="group underline decoration-gray-400 decoration-dotted underline-offset-4 transition-colors hover:text-gray-500"
+            >
+              <CiaoElsaLogo className="mx-1 inline h-4 w-4 text-[#154CDC] transition-transform group-hover:-rotate-12 " />
+              CiaoElsa
+            </a>
+          </motion.h4>
+          <motion.p
+            // variants={text}
+            className="max-w-lg text-base font-normal leading-6 text-gray-500"
+          ></motion.p>
+        </motion.div>
         <motion.div
           // variants={wrapper}
           // initial="offscreen"

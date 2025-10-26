@@ -29,16 +29,11 @@ const text: Variants = {
 };
 
 type EducationCardProps = {
-  datespan: string;
-  name: string;
   description: string;
+  name: string;
 };
 
-const EducationCard: React.FC<EducationCardProps> = ({
-  name,
-  description,
-  datespan,
-}) => {
+const EducationCard: React.FC<EducationCardProps> = ({ name, description }) => {
   return (
     <motion.div
       // variants={wrapper}
@@ -47,12 +42,6 @@ const EducationCard: React.FC<EducationCardProps> = ({
       // viewport={{ once: true, amount: 0.5 }}
       className="grid gap-2"
     >
-      <motion.span
-        // variants={text}
-        className="text-sm font-normal leading-5 text-gray-500"
-      >
-        {datespan}
-      </motion.span>
       <motion.h4
         // variants={text}
         className="text-lg font-medium leading-6 text-gray-900"

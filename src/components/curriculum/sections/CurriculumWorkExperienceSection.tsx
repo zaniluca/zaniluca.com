@@ -1,7 +1,7 @@
 import CurriculumSectionHeading from "../CurriculumSectionHeading";
 import { motion, type Variants } from "motion/react";
-import KampaayLogo from "../../KampaayLogo";
-import CiaoElsaLogo from "../../CiaoElsaLogo";
+import KampaayLogo from "../../company-logos/KampaayLogo";
+import CiaoElsaLogo from "../../company-logos/CiaoElsaLogo";
 
 const wrapper: Variants = {
   offscreen: {
@@ -36,7 +36,7 @@ const CurriculumWorkExperience = () => {
     <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="work experience" />
       <div className="mt-8 grid gap-8 sm:mt-4">
-        <motion.div
+        {/* <motion.div
           // variants={wrapper}
           // initial="offscreen"
           // whileInView="onscreen"
@@ -67,7 +67,7 @@ const CurriculumWorkExperience = () => {
             // variants={text}
             className="max-w-lg text-base font-normal leading-6 text-gray-500"
           ></motion.p>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           // variants={wrapper}
           // initial="offscreen"

@@ -99,10 +99,11 @@ const CurriculumWorkExperience = () => {
             // variants={text}
             className="max-w-lg text-base font-normal leading-6 text-gray-500"
           >
-            Contributed to a rapidly growing startup by developing
-            customer-facing features using Vue, React, and TypeScript, within a
-            SCRUM Agile environment. Played a key role in technology migration,
-            including transitioning from Nuxt 2 to 3 and Vuex to Pinia.
+            Contributed to a fast-growing startup by developing customer-facing
+            features with Vue, React, and TypeScript in a SCRUM environment.
+            Played a key role in the frontend migration from Nuxt 2 to 3 and
+            Vuex to Pinia, improving maintainability and performance across core
+            user flows.
           </motion.p>
         </motion.div>
       </div>

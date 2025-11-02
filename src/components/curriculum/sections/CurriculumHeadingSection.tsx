@@ -15,19 +15,18 @@ const CurriculumHeadingSection = () => {
           Hello! I'm Luca
         </h1>
         <p className="mt-4 max-w-screen-lg leading-relaxed text-gray-500">
-          an Italian Frontend Developer specialized in React, Typescript, Swift,
-          and GoLang. I enjoy writing clean and maintainable code and staying up
-          to date with the latest technology standards and best practices. I'm
-          very passionate about programming, web graphics, and Cloud Computing
+          Italian software engineer passionate about crafting fast, maintainable
+          apps using React, TypeScript, Swift, and Go. I focus on clean code,
+          intuitive UX, and modern cloud-powered solutions.
         </p>
         <div className="mt-5 gap-6 flex items-center justify-start">
           <LinkButton
-            className="text-base print:hidden"
+            className="text-base"
             text="LinkedIn"
             href="https://linkedin.com/in/zaniluca"
           />
           <LinkButton
-            className="text-base print:hidden"
+            className="text-base"
             text="GitHub"
             href="https://github.com/zaniluca"
           />

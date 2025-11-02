@@ -8,11 +8,19 @@ import CurriculumLayout from "../layouts/CurriculumLayout.astro";
 ---
 
 <CurriculumLayout title="Zani Luca">
-  <CurriculumHeadingSection />
+  <CurriculumHeadingSection client:load />
   <Divider client:load />
   <CurriculumWorkExperience client:load />
   <Divider client:load />
-  <CurriculumPersonalWorkSection client:load />
-  <Divider client:load />
-  <CurriculumEducationSection client:load />
+  <!-- Printing -->
+  <div class="hidden print:block">
+    <CurriculumEducationSection client:load />
+    <div class="break-before-page mt-20">
+      <CurriculumPersonalWorkSection client:load />
+    </div>
+  </div>
+  <!-- Not printing -->
+  <div class="print:hidden">
+    <CurriculumPersonalWorkSection client:load />
+  </div>
 </CurriculumLayout>

@@ -13,11 +13,11 @@ const LinkButton: React.FC<LinkButtonProps> = ({ className, text, href }) => {
       href={href}
       className={classNames(
         className,
-        "group inline-flex items-center text-base font-medium leading-6 text-gray-900 hover:text-gray-700 sm:text-sm sm:leading-5"
+        "group inline-flex items-center whitespace-nowrap text-base font-medium leading-6 text-gray-900 hover:text-gray-700 sm:text-sm sm:leading-5"
       )}
     >
       {text}
-      <ArrowIcon className="ml-1 h-4 w-4 transform text-gray-900 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gray-700" />
+      <ArrowIcon className="ml-1 h-4 w-4 flex-shrink-0 transform text-gray-900 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gray-700" />
     </a>
   );
 };

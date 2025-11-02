@@ -3,13 +3,13 @@ import CurriculumSectionHeading from "../CurriculumSectionHeading";
 
 const CurriculumPersonalWorkSection = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="personal work" />
       <div className="mt-4 grid gap-8">
         <PersonalWorkCard
-          datespan="Mar 2022 ― Present"
+          datespan="Mar 2022 ― Jan 2024"
           name="Gitlab Mobile App for Notifications"
-          description="Multiplatform app that leverages giltab mail notifications to send users instant push notifications about their and their team activities on gitlab"
+          description="Multiplatform app (~250 MAUs) that transforms GitLab email alerts into real-time push notifications, keeping teams instantly updated on project activity."
           links={[
             {
               text: "App Store",
@@ -42,16 +42,20 @@ const CurriculumPersonalWorkSection = () => {
           </a>
         </PersonalWorkCard>
         <PersonalWorkCard
-          datespan="Mar 2021 ― Apr 2021"
-          name="React App Showcase Website"
-          description="React Website to showcase my app made in React with the NextJs Framework and Tailwind CSS"
+          datespan="June 2020 ― Feb 2021"
+          name="Fullstack iOS App"
+          description="Native SwiftUI app (~450 MAUs) integrating a custom Flask API to scrape and aggregate school data, helping students stay organized and informed. Reached the top 20 education apps in Italy's App Store."
           links={[
             {
               text: "Check it out",
               href: "https://iregistro.it",
             },
+            {
+              text: "App Store",
+              href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
+            },
           ]}
-          tags={["React", "NextJs", "Github", "Figma"]}
+          tags={["SwiftUI", "Flask Python", "REST", "MVVM", "Core Data"]}
         >
           <a href="https://iregistro.it">
             <div className="group relative inline-flex h-52 w-full items-center justify-end overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
@@ -59,28 +63,6 @@ const CurriculumPersonalWorkSection = () => {
                 className="absolute w-56 transition-transform group-hover:scale-110 sm:w-48"
                 src="/images/iregistro-macbook.png"
                 alt="iregistro.it macbook screenshot"
-              />
-            </div>
-          </a>
-        </PersonalWorkCard>
-        <PersonalWorkCard
-          datespan="June 2020 ― Feb 2021"
-          name="Fullstack iOS App"
-          description="Swift native iOS app with custom Python Flask API that scrapes data from schools websites and helps students staying up to date"
-          links={[
-            {
-              text: "Check it out",
-              href: "https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019",
-            },
-          ]}
-          tags={["Swift", "Flask Python", "REST", "MVVM", "Core Data"]}
-        >
-          <a href="https://apps.apple.com/it/app/iregistro-diario-scuola/id1546399019">
-            <div className="group relative inline-flex h-52 w-full items-end justify-center overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52">
-              <img
-                className="absolute w-32 transition-transform group-hover:scale-110 sm:w-28"
-                src="/images/iregistro-phone.png"
-                alt="iregistro.it iphone screenshot"
               />
             </div>
           </a>

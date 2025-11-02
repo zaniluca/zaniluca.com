@@ -15,31 +15,26 @@ const CurriculumHeadingSection = () => {
           Hello! I'm Luca
         </h1>
         <p className="mt-4 max-w-screen-lg leading-relaxed text-gray-500">
-          an Italian Frontend Developer specialized in React, Typescript, Swift,
-          and GoLang. I enjoy writing clean and maintainable code and staying up
-          to date with the latest technology standards and best practices. I'm
-          very passionate about programming, web graphics, and Cloud Computing
+          Italian software engineer passionate about crafting fast, maintainable
+          apps using React, TypeScript, Swift, and Go. I focus on clean code,
+          intuitive UX, and modern cloud-powered solutions.
         </p>
-        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div>
-            <LinkButton
-              className="text-base"
-              text="Download Curriculum as PDF"
-              href="https://s3.eu-west-2.amazonaws.com/zaniluca.com-curriculums-prod-s3/en_zani_luca.pdf"
-            />
-          </div>
-          <div>
-            <LinkButton
-              className="text-base"
-              text="LinkedIn"
-              href="https://linkedin.com/in/zaniluca"
-            />
-            <LinkButton
-              className="ml-3 text-base"
-              text="GitHub"
-              href="https://github.com/zaniluca"
-            />
-          </div>
+        <div className="mt-5 gap-6 flex items-center justify-start">
+          <LinkButton
+            className="text-base"
+            text="LinkedIn"
+            href="https://linkedin.com/in/zaniluca"
+          />
+          <LinkButton
+            className="text-base"
+            text="GitHub"
+            href="https://github.com/zaniluca"
+          />
+          <LinkButton
+            className="text-base hidden print:inline-flex"
+            text="luca@zaniluca.com"
+            href="mailto:luca@zaniluca.com"
+          />
         </div>
       </div>
     </div>

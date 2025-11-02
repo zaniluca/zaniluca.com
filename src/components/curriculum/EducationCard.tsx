@@ -29,38 +29,27 @@ const text: Variants = {
 };
 
 type EducationCardProps = {
-  datespan: string;
-  name: string;
   description: string;
+  name: string;
 };
 
-const EducationCard: React.FC<EducationCardProps> = ({
-  name,
-  description,
-  datespan,
-}) => {
+const EducationCard: React.FC<EducationCardProps> = ({ name, description }) => {
   return (
     <motion.div
-      variants={wrapper}
-      initial="offscreen"
-      whileInView="onscreen"
+      // variants={wrapper}
+      // initial="offscreen"
+      // whileInView="onscreen"
+      // viewport={{ once: true, amount: 0.5 }}
       className="grid gap-2"
-      viewport={{ once: true, amount: 0.5 }}
     >
-      <motion.span
-        variants={text}
-        className="text-sm font-normal leading-5 text-gray-500"
-      >
-        {datespan}
-      </motion.span>
       <motion.h4
-        variants={text}
+        // variants={text}
         className="text-lg font-medium leading-6 text-gray-900"
       >
         {name}
       </motion.h4>
       <motion.p
-        variants={text}
+        // variants={text}
         className="max-w-lg text-base font-normal leading-6 text-gray-500"
       >
         {description}

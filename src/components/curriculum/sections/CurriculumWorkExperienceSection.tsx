@@ -36,7 +36,7 @@ const CurriculumWorkExperience = () => {
     <div className="my-8 print:my-0">
       <CurriculumSectionHeading name="work experience" />
       <div className="mt-8 grid gap-8 sm:mt-4">
-        {/* <motion.div
+        <motion.div
           // variants={wrapper}
           // initial="offscreen"
           // whileInView="onscreen"
@@ -53,7 +53,7 @@ const CurriculumWorkExperience = () => {
             // variants={text}
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Freelance Software Engineer @
+            Software Engineer @
             <a
               target="_blank"
               href="https://www.ciaoelsa.com/"
@@ -66,8 +66,13 @@ const CurriculumWorkExperience = () => {
           <motion.p
             // variants={text}
             className="max-w-lg text-base font-normal leading-6 text-gray-500"
-          ></motion.p>
-        </motion.div> */}
+          >
+            Building the first pension-tech platform in Italy, helping thousands
+            of people navigate pension funds, TFR decisions, and supplementary
+            pensions through transparent comparison tools and personalized
+            consultancy services.
+          </motion.p>
+        </motion.div>
         <motion.div
           // variants={wrapper}
           // initial="offscreen"
@@ -85,7 +90,7 @@ const CurriculumWorkExperience = () => {
             // variants={text}
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Frontend Developer @
+            Software Engineer @
             <a
               target="_blank"
               href="https://www.kampaay.com/"

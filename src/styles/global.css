@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-gray-50: var(--color-stone-50);
+  --color-gray-100: var(--color-stone-100);
+  --color-gray-150: var(--color-stone-150);
+  --color-gray-200: var(--color-stone-200);
+  --color-gray-250: var(--color-stone-250);
+  --color-gray-300: var(--color-stone-300);
+  --color-gray-350: var(--color-stone-350);
+  --color-gray-400: var(--color-stone-400);
+  --color-gray-450: var(--color-stone-450);
+  --color-gray-500: var(--color-stone-500);
+  --color-gray-550: var(--color-stone-550);
+  --color-gray-600: var(--color-stone-600);
+  --color-gray-650: var(--color-stone-650);
+  --color-gray-700: var(--color-stone-700);
+  --color-gray-750: var(--color-stone-750);
+  --color-gray-800: var(--color-stone-800);
+  --color-gray-850: var(--color-stone-850);
+  --color-gray-900: var(--color-stone-900);
+  --color-gray-950: var(--color-stone-950);
+}

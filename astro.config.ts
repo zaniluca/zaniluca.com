@@ -1,10 +1,18 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
+  devToolbar: {
+    enabled: false,
+  },
   site: "https://zaniluca.com",
-  integrations: [react(), tailwind(), sitemap()],
+  integrations: [react(), sitemap()],
   output: "static",
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

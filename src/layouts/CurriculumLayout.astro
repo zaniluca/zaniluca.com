@@ -9,21 +9,54 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="canonical" href="zaniluca.com" />
+    <link rel="canonical" href="https://zaniluca.com/" />
     <meta name="generator" content={Astro.generator} />
-    <title>Luca Zani</title>
+    <title>Luca Zani — Software Engineer</title>
+    <meta name="author" content="Luca Zani" />
     <meta
       name="description"
-      content="Hello there! I'm Luca Zani, a software engineer based in Italy and I love to build things for the web."
+      content="Luca Zani is a software engineer based in Italy specializing in React, TypeScript, Swift, and Go. Building fast, maintainable apps for the web."
     />
     <meta
       name="keywords"
       content="Luca Zani, Zani Luca, software engineer, web developer, front-end developer, full-stack developer"
     />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zaniluca.com/" />
+    <meta property="og:title" content="Luca Zani — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Luca Zani is a software engineer based in Italy specializing in React, TypeScript, Swift, and Go."
+    />
+    <meta property="og:site_name" content="Luca Zani" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Luca Zani — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Luca Zani is a software engineer based in Italy specializing in React, TypeScript, Swift, and Go."
+    />
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Luca Zani",
+        "url": "https://zaniluca.com",
+        "jobTitle": "Software Engineer",
+        "description": "Italian software engineer specializing in React, TypeScript, Swift, and Go.",
+        "sameAs": [
+          "https://github.com/zaniluca",
+          "https://linkedin.com/in/zaniluca"
+        ]
+      }
+    </script>
     <style>
       @font-face {
         font-family: "Bricolage Grotesque";
-        src: url("/fonts/BricolageGrotesque.ttf") format("ttf");
+        src: url("/fonts/BricolageGrotesque.ttf") format("truetype");
         font-display: swap;
       }
     </style>
